@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="tp03_css.css">
+    <style>
+      
+        ul{
+            list-style-type:none;
+           /*margin:100px auto无效,不能使ul左右居中*/
+            font-size:14px;
+        }
+        .barre{
+            float:left;/*改动的地方*/
+            width:120px;
+            padding:10px;
+        }
+        a:link{
+            color: aliceblue;
+
+        }
+        .button{
+            width:80px;
+            height: 40px;
+            border-width: 0px; /* 边框宽度 */
+            border-radius: 3px; /* 边框半径 */
+            background:red; /* 背景颜色 */
+            cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+            outline: none; /* 不显示轮廓线 */
+            color: white; /* 字体颜色 */
+            font-size: 17px;
+        }
+       
+  </style>
+</head>
+<body>
+    <div>
+        <!--导航栏部分-->
+        <ul class="navbar-fixed-top navbar-inverse">
+            
+            <li class="barre" style="color: darkgray;">Module LO07</li>
+            <li class="barre"><a href="#news">TCBR</a></li>
+            <li class="barre"><a href="#contact">Filieres</a></li>
+            <li class="barre"><a href="#about">Capsules</a></li>
+            <li class="barre"><a href="#about">TPE</a></li>
+            <li class="barre"><a href="#about">Stages</a></li>
+            <li class="barre"><a href="#about">SE</a></li>
+        </ul>
+
+    </div>
+
+    <div class="container">
+      <div class="panel panel-success">
+        <div class="panel-heading">Utilisation d'un Jumbotron(cet element est un panel-succes).</div>
+        <div class="panel-body">Le jumbotron est un composant de Bootstrap. Il affiche un bloc situe en haut de la page d;un site. Ce bloc
+           est d'attirer l'attention de l'utilisateur sur un element particulier. Ce bloc est gris par defaut, mais il est possible de le modifier grace au CSS et a JavaScript pour qu'il puisse contenir une image situee en arriere-plan.
+        </div>
+      </div>
+        <div class="jumbotron">
+             <h1>Programme ISI de l'UTT</h1>
+             <p style="color: gray;">Le Programme ISI de l'UTT dispose actuellement de trois filieres MPL, MSI et MCS ...</p>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">Mise en place d'une pagination</div>
+          <div class="panel-body">We use a large block of connected links for our pagination, making links hard to miss and easily scalable--all while providing large hit areas. Pagination is bulit with list HTML elements
+             so screen readers can announces the number of avaliable links, Use a wrapping "nav" element to identify it as a navigation section to screen readers and other assisitive technologies.
+          </div>
+        </div>
+     <div align="center">
+        <ul class="pagination" align="center">
+            <li><a href="#">TCBR</a></li>
+            <li><a href="#">FIL</a></li>
+            <li><a href="#">Capsules</a></li>
+            <li><a href="#">TPE</a></li>
+            <li><a href="#">Stages</a></li>
+            <li><a href="#">SE</a></li>
+        </ul>
+     </div>
+     <div class="panel panel-primary">
+      <div class="panel-heading">Mise en place de bouton avec des badges</div>
+      <div class="panel-body">Je vous propose de decouvrir les badges de Bootstrap. Ils pourront etre utiles pour afficher et ettre en avant une valeur
+         numerique. Pour les utiliser; il faut tout simplement utiliser la classe: .badge
+      </div>
+    </div>
+     <div   style=" text-align: center; margin: auto; position: absolute;left: 0;right: 0;">
+        <button type="button" class="button" style="background-color: rgb(59, 192, 32);">ATN</button>
+        <button type="button" class="button">IPL<span class="badge">30</span></button>
+        <button type="button" class="button" style="background-color: orange;">VDC <span class="badge">8</span> </button>
+     </div>
+     
+
+     <br>
+
+
+
+     <div style="padding-top: 40px">
+      
+     <div class="panel panel-primary" >
+      <div class="panel-heading" >Mise en place de grilles de presentation</div>
+      <div class="panel-body">Le systeme de grille est le coeur de Bootstrap qui considere qu'une ligne "row" fait 12 colonnes.
+      </div>
+    </div>
+         
+     </div>
+
+     <h3>Grille de 3 colonnes</h3>
+        <div class="row" >
+           <div class="col-xs-6 col-sm-4" >
+              <p>col1</p>
+           </div>
+           <div class="col-xs-6 col-sm-4" >
+              <p>col2
+              </p>
+           </div>
+     
+           <div class="clearfix visible-xs"></div>
+     
+           <div class="col-xs-6 col-sm-4" >
+              <p>col3
+              </p>
+           </div>
+        </div>
+     
+
+
+     
+
+        <h3>Grille de 2 et 3 colonnes</h3>
+        <div class="row" >
+            <div class="col-xs-6 col-sm-4" >
+               <p>col1</p>
+            </div>
+            <div class="col-xs-6 col-sm-8" >
+               <p>col2
+               </p>
+            </div>
+         </div>
+        
+        <div class="row" >
+           <div class="col-xs-6 col-sm-2" >
+              <p>col1</p>
+           </div>
+           <div class="col-xs-6 col-sm-4" >
+              <p>col2
+              </p>
+           </div>
+     
+           <div class="clearfix visible-xs"></div>
+     
+           <div class="col-xs-6 col-sm-6" >
+              <p>col3
+              </p>
+           </div>
+        </div>
+     
+
+     
+     
+   
+        <h3>Grille du l'exercice 4 du TP Web 02</h3>
+         <div class="col-sm-4 col-sm-offset-5" >
+             <p>hh</p>
+
+         </div>
+
+         <div class="row" >
+            <div class="col-xs-6 col-sm-4" >
+               <p>col1</p>
+            </div>
+            <div class="col-xs-6 col-sm-4" >
+               <p>col2
+               </p>
+            </div>
+      
+            <div class="clearfix visible-xs"></div>
+      
+            <div class="col-xs-6 col-sm-4" >
+               <p>col3
+               </p>
+            </div>
+         </div>
+         <div class="row">
+             <div class="col-xs-4">
+                 <p>boite4</p>
+             </div>
+         </div>
+
+    
+
+
+         <div class="panel panel-info">
+          <div class="panel-heading">Utilisation de card avec une image</div>
+          <div class="panel-body">Acard is a flexible and axxtensible content container. It includes options for headers and footers, a wide variety of 
+            content, contextual background colors, and powerful display options. If you're familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
+          </div>
+        </div>
+ 
+         <h3>Card</h3>
+        <div class="card-deck">
+
+            <div class="card" >
+            <img class="card-img-top" src="image/ATN.png"  alt="Card image" >
+            <div class="card-body">
+            <h4 class="card-title">ATN</h4>
+             <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            </div>
+            </div>
+  
+            <div class="card" >
+                <img class="card-img-top" src="image/IPL.png" alt="Card image"  >
+                <div class="card-body">
+                    <h4 class="card-title">IPL</h4>
+                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                </div>
+            </div>
+
+            
+            <div class="card" >
+                <img class="card-img-top" src="image/VDC.png" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">VDC</h4>
+                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                </div>
+            </div>
+        </div>
+  
+
+
+        <div style="padding-top: 40px;">
+        <div class="panel panel-danger">
+          <div class="panel-heading">Utilisation de tableaux</div>
+          <div class="panel-body">Due to the widespread use of tables across third-party widgets like calendars and date pickers, we've designed our tables to be opt-inm.
+            Just add the base class .table to any table, then extend with custom styles or our various included modifier classes.
+          </div>
+        </div>
+        </div>
+       
+      
+
+     <h2>Un tableay avec bootstrap</h2>          
+     <table class="table table-bordered">
+         <thead>
+            <tr>
+              <th>#</th>
+              <th>ATN</th>
+              <th>IPL</th>
+              <th>VDC</th>
+            </tr>
+         </thead>
+          <tbody>
+            <tr style="background-color: beige;">
+              <td>CS</td>
+              <td><ul class="list-group">
+                <li class="list-group-item">IF09</li>
+                <li class="list-group-item">IF22</li>
+            </ul></td>
+            <td><ul class="list-group">
+                <li class="list-group-item">IF05</li>
+                <li class="list-group-item">IF10</li>
+            </ul></td>
+            <td><ul class="list-group">
+                <li class="list-group-item">IF17</li>
+                <li class="list-group-item">IF29</li>
+            </ul></td>
+            </tr>
+            <tr>
+                <td>TM</td>
+                <td><ul class="list-group">
+                    <li class="list-group-item">IF20</li>
+                    <li class="list-group-item">IF34</li>
+                </ul></td>
+                <td><ul class="list-group">
+                    <li class="list-group-item">IF26</li>
+                    <li class="list-group-item">IF31</li>
+                    <li class="list-group-item">LO10</li>
+                </ul></td>
+                <td><ul class="list-group">
+                    <li class="list-group-item">IF28</li>
+                    <li class="list-group-item">IF34</li>
+                </ul></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="padding-top: 40px;">
+          <div class="panel panel-success">
+            <div class="panel-heading">Utilisation de formulaire</div>
+            <div class="panel-body">Bootstrap nous offre de nombreuses classes pour nous permettre de structurer nos formulaires et d'ajouter des styles aux differents elements des formulaires.</div>
+          </div>
+
+        </div>
+     
+   <form action="../tp05/tp05_analyse_formulaire.php" method="get">
+    <div class="form-group">
+    
+        <label for="usr">Nom ?</label>
+        <input type="text" class="form-control" id="usr" name="nom" placeholder="Donnez votre nom"> 
+   
+
+    
+        <label for="usr">Prenom ?</label>
+        <input type="text" class="form-control" id="usr" name="prenom" placeholder="Donnez votre prenom">
+      
+
+      
+        <label for="usr">Email ?</label>
+        <input type="text" class="form-control" id="usr" name="email" placeholder="Donnez votre Email">
+      
+
+   
+        <label for="usr">Date de naissance</label>
+        <input type="text" class="form-control" id="usr" name="date" placeholder="jj/mm/aaaa">
+   
+
+ 
+          <p><b>Sex ?</b></p>
+        <div class="radio-inline">
+            <label><input type="radio" name="sex" value="Masculin">Masculin</label>
+        </div>
+        <div class="radio-inline">
+            <label><input type="radio" name="sex" value="Feminin">Feminin</label>
+        </div>
+  
+
+      <br>
+
+
+          <label for="sel1">Origine des etudiants</label>
+          <select class="form-control" name="origine">
+              <option value="TC de l'UTT">TC de l'UTT</option>
+              <option value="DUT INFO">DUT INFO</option>
+              <option value="DUT GE21">DUT GE21</option>
+              <option value="DUT autre">DUT autre</option>
+            <option value='Prepa scientifique'>Prepa scientifique</option>
+            <option value="Prepa B/L">Prepa B/L</option>
+          </select>
+          
+          <br>
+          <p><b>Validations</b></p>
+          <div class="checkbox">
+              <label><input type="checkbox" name="ST07" value="ST07">ST07</label>
+          </div>
+          <div class="checkbox">
+              <label><input type="checkbox" name="ST09" value="ST09">ST09</label>
+          </div>
+          <div class="checkbox">
+              <label><input type="checkbox" name="ST10" value="ST10">ST10(desactive)</label>
+          </div>
+          <div class="checkbox">
+              <label><input type="checkbox" name="SE" value="SE">SE</label>
+          </div>
+
+          <br>
+          <label for="sel2">Moudules ?</label>
+          <select multiple="multiple" class="form-control" name="moudules[]">
+            <optgroup label="CS">
+                <option value="GL02">GL02</option>
+                <option value="NF16">NF16</option>
+                <option value="NF20">NF20</option>
+            </optgroup>
+            
+            <optgroup label="TM">
+                <option value="IF08">IF09</option>
+                <option value="IF14">IF14</option>
+                <option value="LO02">LO02</option>
+                <option value="NF21">NF21</option>
+            </optgroup>
+            
+          </select>
+          <br>
+          <label for="comment">Infoemations complementaires</label>
+          <textarea class="form-control" rows="5"  name="textarea" ></textarea>
+        </div>
+          <input type="submit" value="Submit form" class="btn btn-primary">
+      </form>
+
+    
+     
+     
+
+
+</div>
+
+</body>
+</html>

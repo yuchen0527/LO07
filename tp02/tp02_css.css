@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-3-3, 15:02:25
+    Author     : CHEN  YU
+*/
+h1{
+    color: navy;
+    text-align: center;
+    margin: 20px;
+}
+h2{
+    color: red;
+}
+a:visited{
+    color: orange;
+}
+a:hover{
+    color: greenyellow;
+}
+ol{
+    color: chocolate;
+}
+.cs{
+    color:crimson;
+}
+.tm{
+    color: blueviolet;
+}
+li{
+    color:cornflowerblue;
+}
+#nom{
+    text-decoration: underline;
+}
+ol li{
+    list-style-type: lower-greek;
+}
+.gras{
+    color: dodgerblue;
+    font-size: large;
+}
+#matiere{
+    color: salmon;
+    display: none;
+
+}
+table tbody td{
+    background-color: #ffa678;
+}
